@@ -8,9 +8,7 @@ export default function App() {
   );
 
   const generateQRCode = () => {
-    const newQrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(
-      inputText
-    )}`;
+    const newQrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputText}`;
     setQrCodeUrl(newQrCodeUrl);
   };
 
